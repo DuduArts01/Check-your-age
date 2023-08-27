@@ -25,7 +25,7 @@ function check(){
             } else if(age < 18){
                 //teen
                 img.setAttribute("src", 'teenM.png')
-            } else if(age < 21){
+            } else if(age <= 21){
                 //young
                 img.setAttribute("src", 'youngM.png')
             } else if(age < 60){
@@ -46,7 +46,7 @@ function check(){
             } else if(age < 18){
                 //teen
                 img.setAttribute("src", 'teenF.png')
-            } else if(age < 21){
+            } else if(age <= 21){
                 //young
                 img.setAttribute("src", 'youngF.png')
             } else if(age < 60){
