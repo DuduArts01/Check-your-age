@@ -6,7 +6,7 @@ function check(){
     var res = window.document.querySelector('div#res')
     
     if(fage.value.length == 0 || Number(fage.value) > now_year){
-        window.alert('[ERROR] Check your data again!')
+        window.alert('[ERRO] Verifique seus dados novamente!')
     } else{
         var fsex = window.document.getElementsByName('radsex')
         var age = now_year - Number(fage.value)
@@ -58,7 +58,7 @@ function check(){
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detected ${gender} with ${age} years old.`
+        res.innerHTML = `Detectado ${gender} com ${age} anos.`
         res.appendChild(img)
     }
     
