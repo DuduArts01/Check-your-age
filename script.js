@@ -15,7 +15,7 @@ function check(){
         var img = window.document.createElement("img")
         img.setAttribute('id', 'photo')
         if(fsex[0].checked){
-            gender = 'Male'
+            gender = 'Masculino'
             if(age >= 0 && age <= 3){
                 //baby
                 img.setAttribute("src", 'babyM.png')
@@ -36,7 +36,7 @@ function check(){
                 img.setAttribute("src", 'elderlyM.png')
             }
         } else{
-            gender = 'Female'
+            gender = 'Feminino'
             if(age >= 0 && age <= 3){
                 //baby
                 img.setAttribute("src", 'babyF.png')
@@ -58,7 +58,7 @@ function check(){
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectado ${gender} com ${age} anos.`
+        res.innerHTML = `\nDetectado ${gender} com ${age} anos.`
         res.appendChild(img)
     }
     
