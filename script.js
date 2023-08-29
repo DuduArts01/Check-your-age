@@ -58,8 +58,9 @@ function check(){
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `\nDetectado ${gender} com ${age} anos.`
         res.appendChild(img)
+        res.innerHTML = `\nDetectado ${gender} com ${age} anos.`
+       
     }
     
 
